@@ -18,6 +18,10 @@ section{
     background-color: rgb(245,245,245);
 }
 
+a{
+    text-decoration: none;
+}
+
 .title {
 font-size:100px;
 margin-bottom:12px;
@@ -53,6 +57,25 @@ line-height: 1;
     max-width: 450px;
 }
 
+.social__list{
+    margin-top: 16px;
+    display: flex;
+}
+
+.social__link{
+    background-color:rgb(93, 190, 255);
+    color: white;
+    padding: 6px;
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
 
 /*
 
@@ -67,11 +90,11 @@ nav{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    height: 100px;
+    height: 90px;
 }
 
 #personal-logo{
-    width: 90px;
+    width: 80px;
 }
 
 .nav__link--list{
@@ -83,7 +106,6 @@ nav{
 }
 
 .nav__link--anchor{
-    text-decoration: none;
     font-size: 16px;
     color: #242424;
     font-weight: 700;
