@@ -264,7 +264,7 @@ MODAL
     transform: translate(-50%,-50%);
     width: 90%;
     max-width: 1000px;
-    height: 500px;
+    height: 600px;
     box-shadow: 0 20px 80px 0 rgb(0,0,0,0.55);
     border-radius: 20px;
     overflow: hidden;
@@ -321,7 +321,7 @@ MODAL
 
 
 .modal__contact{
-    background-color: black;
+    background-color: #242424;
     color: white;
 }
 
@@ -375,12 +375,13 @@ MODAL
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: -1;
 }
 
 .modal__overlay--loading{
     background-color: rgb(4, 164, 113);
     font-size: 80px;
-    z-index: -1;
+    
 }
 
 .modal__overlay--success {
@@ -390,6 +391,10 @@ MODAL
     text-align: center;
     padding: 28px;
 
+}
+
+.modal__overlay--visible{
+    z-index: 1;
 }
 
 .fa-spinner{
