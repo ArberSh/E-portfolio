@@ -30,7 +30,7 @@
     />
   </head>
   <body>
-    <section id="landing-page">
+    <section id="landing-page" onmousemove="moveBackground(event)">
       <nav>
         <figure>
           <img
@@ -44,13 +44,13 @@
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
-            >
+            onclick="toggleModal()">
               About</a
             >
           </li>
           <li class="nav__link">
             <a
-              href="#"
+              href="#projects"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
             >
               Projects</a
@@ -97,9 +97,11 @@
           </div>
         </div>
       </header>
+      <a href="">
       <button class="mail__btn click" onclick="toggleModal()">
         <i class="fas fa-envelope"></i>
       </button>
+    </a>
       <a href="#projects" class="scroll">
         <div class="scroll__icon click"></div>
       </a>
@@ -164,6 +166,15 @@
           </div>
         </div>
       </div>
+      <img src="./assests/semi circle.svg" class="shape shape--0" alt="">
+      <img src="./assests/circle.svg" class="shape shape--1" alt="">
+      <img src="./assests/squiggly.svg" class="shape shape--2" alt="">
+      <img src="./assests/circle.svg" class="shape shape--3" alt="">
+      <img src="./assests/triangle.svg" class="shape shape--4" alt="">
+      <img src="./assests/circle.svg" class="shape shape--5" alt="">
+      <img src="./assests/squiggly.svg" class="shape shape--6" alt="">
+      <img src="./assests/circle.svg" class="shape shape--7" alt="">
+      <img src="./assests/semi circle.svg" class="shape shape--8" alt="">
     </section>
     <section id="projects">
       <div class="container">
@@ -244,22 +255,22 @@
           </figure>
           <div class="footer__social--list">
             <a
-              href=""
+              href="" target="_blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               Github
             </a>
             <a
-              href=""
+              href="" target="_blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               Linkedin
             </a>
             <a
-              href=""
+              href="#" onclick="toggleModal()"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
-              Email
+              Contact
             </a>
             <a
               href=""
