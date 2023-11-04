@@ -1,6 +1,7 @@
  let isModalOpen = false;
  let contrastToggle = false
  const scaleFactor = 1/20
+ const HTML = document.querySelector("html")
 
  function moveBackground(event){
     const shapes = document.querySelectorAll(".shape")
@@ -50,8 +51,10 @@ function contact(event){
 function toggleModal(){
     if (isModalOpen){
         isModalOpen = false
+        HTML.style.overflowY = "scroll"
         return document.body.classList.remove("modal--open")
     }
     isModalOpen = true
     document.body.classList += " modal--open"
+    HTML.style.overflowY = "hidden"    
 }
